@@ -4,7 +4,7 @@
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+T exec $term
+    bindsym $mod+Return exec $term
 
     # Kill focused window
     bindsym $mod+q kill

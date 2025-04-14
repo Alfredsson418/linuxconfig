@@ -1,6 +1,7 @@
 # .bashrc
 
-PS1='\e[0;34m\u | \e[4;34m\w\e[0m $ '
+export PS1='\[\e[0;34m\]\u | \[\e[4;34m\]\w\[\e[0m\] \$ '
+
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
