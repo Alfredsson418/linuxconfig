@@ -1,0 +1,5 @@
+# autotiling
+exec autotiling
+
+# Notification Daemon
+exec swaync
