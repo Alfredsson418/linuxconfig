@@ -181,14 +181,16 @@ bindsym XF86KbdBrightnessDown exec ~/.config/sway/scripts/avizo.sh keyboard
 # fp = flatpak
 set $fp_run flatpak run
 
-set $fp_zed dev.zed.Zed
-bindsym $mod+Ctrl+z exec $fp_run $fp_zed
+bindsym $mod+Ctrl+z exec zed
 
 set $fp_discord com.discordapp.DiscordCanary
-bindsym $mod+Ctrl+x exec $fp_run $fp_discord
+bindsym $mod+Ctrl+d exec $fp_run $fp_discord
 
 # Toggle control center
 bindsym $mod+Shift+n exec swaync-client -t -sw
+
+# SwaySettings
+bindsym $mod+Ctrl+s exec swaysettings
 
 # Rofi
 bindsym $mod+d exec rofi -show drun -show-icons -lines 8 -sort -drun-match-fields name -async-pre-read -click-to-exit

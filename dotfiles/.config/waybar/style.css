@@ -84,6 +84,7 @@ button {
 }
 
 #custom-notification,
+#custom-mullvad,
 #clock,
 #battery,
 #cpu,
@@ -152,4 +153,12 @@ label:focus {
     animation-timing-function: steps(12);
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+#custom-mullvad.connected {
+    background-color: limegreen;
+}
+
+#custom-mullvad.disconnected {
+    background-color: red;
 }
