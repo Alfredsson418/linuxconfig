@@ -6,7 +6,9 @@
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Ubuntu, Arial;
+    font-family:
+        Ubuntu Nerd Font,
+        Arial;
     font-size: 13px;
 }
 
@@ -85,6 +87,7 @@ button {
 
 #custom-notification,
 #custom-mullvad,
+#custom-power,
 #clock,
 #battery,
 #cpu,

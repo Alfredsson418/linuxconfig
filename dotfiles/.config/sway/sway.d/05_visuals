@@ -19,4 +19,4 @@ client.unfocused	      #4b4b4b #202020 #888888 #4b4b4b   #4b4b4b
 client.urgent		      #FF0000 #FF0000 #ffffff #FF0000   #FF0000
 
 ### text
-font Ubuntu 10
+font "Ubuntu Nerd Font" 10
