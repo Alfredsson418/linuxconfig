@@ -39,7 +39,7 @@
 
 
 configuration {
-    font: "Ubuntu 14";
+    font: "Ubuntu Nerd Font 14";
 }
 
 window {

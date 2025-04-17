@@ -3,7 +3,7 @@
 home_dir="$HOME/"
 target_dir="./dotfiles"
 
-dot_files=(".bashrc")
+dot_files=(".bashrc" ".gitconfig")
 
 for i in "${dot_files[@]}"; do
     dir=$(readlink -f "$home_dir$i")

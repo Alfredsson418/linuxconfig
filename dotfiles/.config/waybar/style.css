@@ -22,9 +22,9 @@ window#waybar {
     background-color: @background;
 }
 .modules-center {
-    padding: 2px;
+    padding: 6px;
     margin: 5 0 0 0;
-    border-radius: 8px;
+    border-radius: 16px;
     background-color: transparent;
 }
 .modules-right {
@@ -86,6 +86,7 @@ button {
 }
 
 #custom-notification,
+#tray,
 #custom-mullvad,
 #custom-power,
 #clock,
@@ -109,6 +110,15 @@ button {
 #window,
 #workspaces {
     margin: 0 4px;
+}
+
+#privacy {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-radius: 10px;
+    background-color: @background;
 }
 
 /* If workspaces is the leftmost module, omit left margin */

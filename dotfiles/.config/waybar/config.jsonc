@@ -11,22 +11,55 @@
         "sway/workspaces",
         "sway/mode",
         "sway/scratchpad"
+
 //         "custom/media"
     ],
-    "modules-center": [ ],
+    "modules-center": [
+      "privacy"
+    ],
     "modules-right": [
         "network",
         "cpu",
         "memory",
         "temperature",
         "backlight",
-        "battery",
-        "clock",
         "custom/mullvad",
+        "battery",
+        "tray",
         "custom/notification",
+        "clock",
         "custom/power"
     ],
     // Modules configuration
+    //
+    "privacy": {
+    	"icon-spacing": 6,
+    	"icon-size": 16,
+    	"transition-duration": 250,
+    	"modules": [
+    		{
+    			"type": "screenshare",
+    			"tooltip": true,
+    			"tooltip-icon-size": 24
+    		},
+    		{
+    			"type": "audio-out",
+    			"tooltip": true,
+    			"tooltip-icon-size": 24
+    		},
+    		{
+    			"type": "audio-in",
+    			"tooltip": true,
+    			"tooltip-icon-size": 24
+    		}
+    	]
+    },
+    "tray": {
+        "show-passive-items": true,
+        "reverse-direction": true,
+        "icon-size": 20,
+        "spacing": 10
+    },
      "sway/workspaces": {
          "disable-scroll": true,
          "all-outputs": true,
@@ -106,7 +139,7 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/power": {
-        "format" : "⏻ ",
+        "format" : "⏻",
     		"tooltip": false,
     		"menu": "on-click",
     		"menu-file": "$HOME/.config/waybar/modules/power_menu.xml", // Menu file in resources folder

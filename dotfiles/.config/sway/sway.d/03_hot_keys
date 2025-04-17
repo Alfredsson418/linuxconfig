@@ -194,3 +194,10 @@ bindsym $mod+Ctrl+s exec swaysettings
 
 # Rofi
 bindsym $mod+d exec rofi -show drun -show-icons -lines 8 -sort -drun-match-fields name -async-pre-read -click-to-exit
+
+
+
+# Screenshot
+bindsym $mod+print exec grimshot save area - | swappy -f -
+bindsym $mod+Shift+print exec grimshot save output - | swappy -f -
+bindsym $mod+Ctrl+print exec grimshot save window - | swappy -f -
