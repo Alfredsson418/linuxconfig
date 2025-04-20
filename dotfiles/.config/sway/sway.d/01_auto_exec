@@ -4,6 +4,9 @@ exec autotiling
 # Notification Daemon
 exec swaync
 
+# SwayOSD
+exec swayosd-server
+
 ### Idle configuration
 exec swayidle -w \
         timeout 300 'swaylock -f -c 000000' \

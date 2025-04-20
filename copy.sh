@@ -15,7 +15,7 @@ done
 
 config_dir="$home_dir.config/"
 
-config_dirs=("sway" "swaync" "waybar" "swaylock" "rofi" "kitty" "zed")
+config_dirs=("sway" "swaync" "waybar" "swaylock" "rofi" "kitty" "zed" "swayosd")
 
 for i in "${config_dirs[@]}"; do
     dir=$(readlink -f "$config_dir$i")

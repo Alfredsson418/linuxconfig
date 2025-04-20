@@ -1,1 +1,10 @@
 image=~/.config/sway/assets/bg.jpg
+
+show-keyboard-layout
+
+font Ubuntu Nerd Font
+
+indicator-idle-visible
+
+inside-color 00000000
+inside-clear-color FFFFFF
