@@ -1,0 +1,5 @@
+
+
+
+
+# install ubuntu nerd font
