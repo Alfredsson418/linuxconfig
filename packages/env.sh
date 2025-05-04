@@ -1,7 +1,10 @@
 common_env=(
     "kitty" # Terminal
-    "dolphin" # GUI File Manager
+    "nautilus" # GUI File Manager
     "sddm"
+    "vlc"
+    "tmux"
+    "NetworkManager-tui"
 )
 
 fedora_env=(

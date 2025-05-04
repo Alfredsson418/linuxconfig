@@ -142,3 +142,6 @@ if [[ $delete_apps == y ]]; then
     echo "Delete via dnf: ${common_delete[@]}"
     sudo dnf remove -y "${common_delete[@]}"
 fi
+
+echo "Generating new SSH key"
+ssh-keygen -t ed25519 -b 4096 -C "SSH Key for $HOSTNAME" -f ~/.ssh/new_ssh_id -N ''
