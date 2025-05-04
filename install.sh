@@ -6,7 +6,7 @@ flatpak_remotes=(
 )
 
 echo "Copying dotfiles to $USER"
-cp -r ./dotfiles/ ~/
+cp -rT ./dotfiles ~
 
 read -rp "Do you wish to remove standard Flatpak remotes? [y/n] " del_flatpak_remotes
 if [[ $del_flatpak_remotes == y ]]; then
