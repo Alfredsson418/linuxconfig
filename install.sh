@@ -11,6 +11,8 @@ cp -r ./dotfiles/ ~/
 
 echo "Deleting default flapak remote"
 sudo flatpak remote-delete fedora
+sudo flatpak remote-delete flathub
+
 
 echo "Adding flatpak remotes"
 for i in "${flatpak_remotes[@]}"; do
