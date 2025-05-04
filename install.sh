@@ -69,7 +69,10 @@ if [[ $dev_tools == y ]]; then
     echo " "
 
     echo "Installing via flatpak ${flatpak_dev[@]}"
-    flatpak install -y "${flatpak_dev[@]}"
+    for i in "${flatpak_dev[@]}"; do
+        echo "flatpak remote-add --if-not-exists $i"
+        flatpak install -y $i
+    done
 fi
 
 echo " "
@@ -86,7 +89,12 @@ if [[ $env_apps == y ]]; then
     sudo dnf install -y "${common_env[@]}" "${fedora_env[@]}"
 
     echo "Installing via flatpak ${flatpak_env[@]}"
-    flatpak install -y "${flatpak_env[@]}"
+    for i in "${flatpak_env[@]}"; do
+        echo "flatpak remote-add --if-not-exists $i"
+        flatpak install -y $i
+    done
+
+
 
 fi
 
@@ -107,7 +115,10 @@ if [[ $gaming_apps == y ]]; then
     sudo dnf install -y "${fedora_gaming[@]}"
 
     echo "Installing via flatpak ${flatpak_gaming[@]}"
-    flatpak install -y "${flatpak_gaming[@]}"
+    for i in "${flatpak_gaming[@]}"; do
+        echo "flatpak remote-add --if-not-exists $i"
+        flatpak install -y $i
+    done
 fi
 
 read -rp "Do you wish to install Privacy applications and tools? [y/n] " privacy_apps
@@ -119,19 +130,10 @@ if [[ $privacy_apps == y ]]; then
     sudo dnf install -y "${common_privacy[@]}"
 
     echo "Installing via flatpak ${flatpak_privacy[@]}"
-    flatpak install -y "${flatpak_privacy[@]}"
-fi
-
-read -rp "Do you wish to install Other applications and tools? [y/n] " other_apps
-if [[ $other_apps == y ]]; then
-
-    source ./packages/other.sh
-
-    echo "Installing via dnf: ${common_privacy[@]}"
-    sudo dnf install -y "${common_privacy[@]}"
-
-    echo "Installing via flatpak ${flatpak_privacy[@]}"
-    flatpak install -y "${flatpak_privacy[@]}"
+    for i in "${flatpak_privacy[@]}"; do
+        echo "flatpak remote-add --if-not-exists $i"
+        flatpak install -y $i
+    done
 fi
 
 read -rp "Do you wish to remove some pre-installed applications? [y/n] " delete_apps
@@ -143,5 +145,10 @@ if [[ $delete_apps == y ]]; then
     sudo dnf remove -y "${common_delete[@]}"
 fi
 
-echo "Generating new SSH key"
-ssh-keygen -t ed25519 -b 4096 -C "SSH Key for $HOSTNAME" -f ~/.ssh/new_ssh_id -N ''
+read -rp "Do you wish to generare a new ssh key? [y/n] " ssh_key
+if [[ $ssh_key == y ]]; then
+
+    echo "Generating new SSH key"
+    ssh-keygen -t ed25519 -b 4096 -C "SSH Key for $HOSTNAME" -f ~/.ssh/new_ssh_id -N ''
+
+fi

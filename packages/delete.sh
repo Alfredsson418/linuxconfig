@@ -10,8 +10,6 @@ common_delete=(
     "gnome-clocks"
     "gnome-connections"
     "gnome-contacts"
-    "gnome-control-center"
-    "gnome-control-center-filesystem"
     "gnome-epub-thumbnailer"
     "gnome-font-viewer"
     "gnome-initial-setup"
