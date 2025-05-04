@@ -136,29 +136,12 @@ bindsym $mod+r mode "resize"
 
 # Sink volume raise
 bindsym XF86AudioRaiseVolume exec swayosd-client --output-volume raise
-bindsym --locked XF86AudioRaiseVolume exec swayosd-client --output-volume raise
 # Sink volume lower
 bindsym XF86AudioLowerVolume exec  swayosd-client --output-volume lower
-bindsym --locked XF86AudioLowerVolume exec swayosd-client --output-volume lower
 # Sink volume toggle mute
 bindsym XF86AudioMute exec swayosd-client --output-volume mute-toggle
-bindsym --locked XF86AudioMute exec swayosd-client --output-volume mute-toggle
 # Source volume toggle mute
 bindsym XF86AudioMicMute exec swayosd-client --input-volume mute-toggle
-bindsym --locked XF86AudioMicMute exec swayosd-client --input-volume mute-toggle
-
-# Brightness
-bindsym XF86MonBrightnessUp exec swayosd-client --brightness raise
-bindsym --locked XF86MonBrightnessUp exec swayosd-client --brightness raise
-bindsym XF86MonBrightnessDown exec swayosd-client --brightness lower
-bindsym --locked XF86MonBrightnessDown exec swayosd-client --brightness lower
-
-# Keyboard brightness
-# bindsym XF86KbdBrightnessUp exec ~/.config/sway/scripts/avizo.sh keyboard
-# bindsym --locked XF86KbdBrightnessUp exec ~/.config/sway/scripts/avizo.sh keyboard
-# bindsym XF86KbdBrightnessDown exec ~/.config/sway/scripts/avizo.sh keyboard
-# bindsym --locked XF86KbdBrightnessDown exec ~/.config/sway/scripts/avizo.sh keyboard
-
 
 
 

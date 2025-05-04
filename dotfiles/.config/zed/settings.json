@@ -33,6 +33,9 @@
     },
     "JSONC": {
       "format_on_save": "off"
+    },
+    "Vala": {
+      "format_on_save": "on"
     }
   },
   "lsp": {
@@ -49,6 +52,7 @@
     "docker-compose" : true,
     "make" : true,
     "latex" : true,
-    "log" : true
+    "log" : true,
+    "vala" : true
   }
 }

@@ -1,15 +1,16 @@
-common_dev = (
+common_dev=(
     "docker-ce"
     "docker-ce-cli"
     "containerd.io"
     "docker-buildx-plugin"
     "docker-compose-plugin"
+    "gnome-keyring" # Used to store password for zed etc
 )
 
-fedora_dev = (
+fedora_dev=(
 
 )
 
-flatpak = (
+flatpak_dev=(
     "flathub com.jetbrains.IntelliJ-IDEA-Community"
 )

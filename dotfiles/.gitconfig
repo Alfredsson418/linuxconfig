@@ -2,8 +2,10 @@
 	email = oskar.alfredsson@proton.me
 	name = Oskar Alfredsson
 [core]
-	autocrlf = input
-	safecrlf = true
+# 	autocrlf = input
+# 	safecrlf = true
 [alias]
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 
+[pull]
+	rebase = false
