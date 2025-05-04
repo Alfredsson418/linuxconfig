@@ -1,8 +1,6 @@
 common_delete=(
     "firefox"
     "gnome-backgrounds"
-    "gnome-bluetooth"
-    "gnome-bluetooth-libs"
     "gnome-browser-connector"
     "gnome-calculator"
     "gnome-calendar"
@@ -24,5 +22,4 @@ common_delete=(
     "gnome-weather"
     "desktop-backgrounds-gnome"
     "f42-backgrounds-gnome"
-
 )
