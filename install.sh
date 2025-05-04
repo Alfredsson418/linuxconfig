@@ -157,3 +157,16 @@ if [[ $ssh_key == y ]]; then
     ssh-keygen -t ed25519 -b 4096 -C "SSH Key for $HOSTNAME" -f ~/.ssh/new_ssh_id -N ''
 
 fi
+
+read -rp "Do you wish to run docker post install script? [y/n] " docker_post
+if [[ $docker_post == y ]]; then
+
+    bash ./install_scripts/docker_post_install.sh
+
+fi
+
+read -rp "Do you wish to enable SDDM? [y/n] " sddm_enable
+if [[ $docker_post == y ]]; then
+    sudo systemctl enable sddm.service
+
+fi
