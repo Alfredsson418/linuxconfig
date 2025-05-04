@@ -1,6 +1,7 @@
 common_env=(
     "kitty" # Terminal
     "dolphin" # GUI File Manager
+    "sddm"
 )
 
 fedora_env=(

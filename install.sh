@@ -140,5 +140,5 @@ if [[ $delete_apps == y ]]; then
     source ./packages/delete.sh
 
     echo "Delete via dnf: ${common_delete[@]}"
-    sudo dnf install -y "${common_delete[@]}"
+    sudo dnf remove -y "${common_delete[@]}"
 fi
