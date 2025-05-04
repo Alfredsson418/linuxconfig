@@ -9,6 +9,9 @@ echo "Copying dotfiles to $USER"
 cp -r ./dotfiles/ ~/
 
 
+echo "Deleting default flapak remote"
+sudo flatpak remote-delete fedora
+
 echo "Adding flatpak remotes"
 for i in "${flatpak_remotes[@]}"; do
     echo "flatpak remote-add --if-not-exists $i"
