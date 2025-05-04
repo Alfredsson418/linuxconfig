@@ -133,3 +133,12 @@ if [[ $other_apps == y ]]; then
     echo "Installing via flatpak ${flatpak_privacy[@]}"
     flatpak install -y "${flatpak_privacy[@]}"
 fi
+
+read -rp "Do you wish to remove some pre-installed applications? [y/n] " delete_apps
+if [[ $delete_apps == y ]]; then
+
+    source ./packages/delete.sh
+
+    echo "Delete via dnf: ${common_delete[@]}"
+    sudo dnf install -y "${common_delete[@]}"
+fi

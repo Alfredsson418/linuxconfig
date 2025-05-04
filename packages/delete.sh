@@ -1,0 +1,3 @@
+common_delete=(
+    "firefox"
+)

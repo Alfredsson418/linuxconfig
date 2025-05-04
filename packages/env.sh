@@ -20,4 +20,5 @@ flatpak_env=(
     "flathub it.mijorus.gearlever" # Run Appimages easy
     "flathub com.github.tchx84.Flatseal" # Change flatpak permissions etc
     "flathub com.spotify.Client"
+    "flathub org.mozilla.firefox"
 )
