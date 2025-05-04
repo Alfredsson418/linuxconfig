@@ -8,35 +8,46 @@ flatpak_remotes=(
 echo "Copying dotfiles to $USER"
 cp -r ./dotfiles/ ~/
 
+read -rp "Do you wish to remove standard Flatpak remotes? [y/n] " del_flatpak_remotes
+if [[ $del_flatpak_remotes == y ]]; then
+    echo "Deleting default flapak remote"
+    sudo flatpak remote-delete fedora
+    sudo flatpak remote-delete flathub
+fi
 
-echo "Deleting default flapak remote"
-sudo flatpak remote-delete fedora
-sudo flatpak remote-delete flathub
 
+read -rp "Do you wish to add Flatpak remotes? [y/n] " add_flatpak_remotes
+if [[ $add_flatpak_remotes == y ]]; then
+    echo "Adding flatpak remotes"
+    for i in "${flatpak_remotes[@]}"; do
+        echo "flatpak remote-add --if-not-exists $i"
+        flatpak remote-add --if-not-exists $i
+    done
+fi
 
-echo "Adding flatpak remotes"
-for i in "${flatpak_remotes[@]}"; do
-    echo "flatpak remote-add --if-not-exists $i"
-    flatpak remote-add --if-not-exists $i
-done
-
-echo " "
-
-source ./packages/sources.sh
-
-# Adding COPR repos
-for i in "${fedora_copr_repo[@]}"; do
-    echo "Enabling copr repo $i"
-    sudo dnf copr enable -y $i
-done
 
 echo " "
 
-# Adding new repos
-for i in "${fedora_new_repo[@]}"; do
-    echo "Adding new repo $i"
-    sudo dnf config-manager addrepo --from-repofile=$i
-done
+read -rp "Do you wish to add and enable fedora copr repos and remote repos? [y/n] " add_fedora_repos
+if [[ $add_fedora_repos == y ]]; then
+    source ./packages/sources.sh
+
+    # Adding COPR repos
+    for i in "${fedora_copr_repo[@]}"; do
+        echo "Enabling copr repo $i"
+        sudo dnf copr enable -y $i
+    done
+
+    echo " "
+
+    # Adding new repos
+    for i in "${fedora_new_repo[@]}"; do
+        echo "Adding new repo $i"
+        sudo dnf config-manager addrepo --from-repofile=$i
+    done
+
+fi
+
 
 echo " "
 
