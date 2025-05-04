@@ -12,7 +12,6 @@ common_delete=(
     "gnome-font-viewer"
     "gnome-initial-setup"
     "gnome-maps"
-    "gnome-online-accounts"
     "gnome-remote-desktop"
     "gnome-software"
     "gnome-software-fedora-langpacks"
