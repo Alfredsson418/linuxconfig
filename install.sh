@@ -5,6 +5,9 @@ flatpak_remotes=(
     "flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo"
 )
 
+echo "Copying dotfiles to $USER"
+cp -r ./dotfiles/ ~/
+
 
 echo "Adding flatpak remotes"
 for i in "${flatpak_remotes[@]}"; do
