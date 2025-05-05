@@ -6,6 +6,7 @@ common_dev=(
     "docker-compose-plugin"
     # "gnome-keyring" # Used to store password for zed etc
     "kwallet"
+    "curl"
 )
 
 fedora_dev=(

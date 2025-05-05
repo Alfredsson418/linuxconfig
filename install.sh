@@ -163,22 +163,25 @@ fi
 
 read -rp "Do you wish to generare a new ssh key? [y/n] " ssh_key
 if [[ $ssh_key == y ]]; then
-
-    echo "Generating new SSH key"
-    ssh-keygen -t ed25519 -b 4096 -C "SSH Key for $HOSTNAME" -f ~/.ssh/new_ssh_id -N ''
+    bash ./scripts/ssh_keygen.sh
 
 fi
 
 read -rp "Do you wish to run docker post install script? [y/n] " docker_post
 if [[ $docker_post == y ]]; then
-
-    bash ./install_scripts/docker_post_install.sh
+    bash ./scripts/docker_post_install.sh
 
 fi
 
-read -rp "Do you wish to enable SDDM? [y/n] " sddm_enable
-if [[ $sddm_post == y ]]; then
-    sudo systemctl disable gdm.service
-    sudo systemctl enable sddm.service
 
+read -rp "Do you wish to install fonts? [y/n] " font_install
+if [[ $font_install == y ]]; then
+    bash ./scripts/fonts.sh
+
+fi
+
+read -rp "Do you wish to install Nvidia drivers? (This will update the system)[y/n] " nvidia_drivers
+# https://rpmfusion.org/Howto/NVIDIA#Current_GeForce.2FQuadro.2FTesla
+if [[ $nvidia_drivers == y ]]; then
+    bash ./scripts/nvidia_driver_install.sh
 fi
