@@ -21,7 +21,7 @@
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
-    "light": "One Light",
+    "light": "Github Light High Contrast",
     "dark": "Github Dark High Contrast"
   },
   "languages": {
@@ -46,7 +46,7 @@
     }
   },
   "vim_mode": false,
-  "auto_install_extensions": {
+  "auto_install_extension": {
     "github-theme": true,
     "dockerfile" : true,
     "docker-compose" : true,

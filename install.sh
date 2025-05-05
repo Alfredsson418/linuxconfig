@@ -158,7 +158,7 @@ if [[ $delete_apps == y ]]; then
     source ./packages/delete.sh
 
     echo "Delete via dnf: ${common_delete[@]}"
-    sudo dnf remove -y "${common_delete[@]}"
+    sudo dnf remove -y --noautoremove "${common_delete[@]}"
 fi
 
 read -rp "Do you wish to generare a new ssh key? [y/n] " ssh_key

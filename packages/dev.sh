@@ -4,7 +4,8 @@ common_dev=(
     "containerd.io"
     "docker-buildx-plugin"
     "docker-compose-plugin"
-    "gnome-keyring" # Used to store password for zed etc
+    # "gnome-keyring" # Used to store password for zed etc
+    "kwallet"
 )
 
 fedora_dev=(
