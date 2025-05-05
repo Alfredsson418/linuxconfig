@@ -28,7 +28,11 @@ fi
 unset rc
 
 # Auth
-# if hash gnome-keyring-daemon 2>/dev/null; then
-#     eval "$(/usr/bin/gnome-keyring-daemon --start 2>/dev/null)"
-#     export SSH_AUTH_SOCK
-# fi
+if hash gnome-keyring-daemon 2>/dev/null; then
+    eval "$(/usr/bin/gnome-keyring-daemon --start 2>/dev/null)"
+    export SSH_AUTH_SOCK
+fi
+
+if [ "$DESKTOP_SESSION" = "sway" ]; then
+    export XDG_CURRENT_DESKTOP=sway
+fi

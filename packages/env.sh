@@ -18,6 +18,9 @@ fedora_env=(
     "swappy"
     "swaylock" # Lock Screen
     "swayosd-git" # Backend server for different function buttons
+    "xdg-desktop-portal-gtk"
+    "xdg-desktop-portal-wlr"
+    "adw-gtk3-theme"
 )
 
 flatpak_env=(
