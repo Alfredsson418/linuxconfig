@@ -175,3 +175,7 @@ label:focus {
 #custom-mullvad.disconnected {
     background-color: red;
 }
+
+#custom-mullvad.err {
+    background-color: gray;
+}
