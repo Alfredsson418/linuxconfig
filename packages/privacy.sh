@@ -1,6 +1,7 @@
 
 common_privacy=(
     "mullvad-vpn"
+    "ufw"
 )
 
 flatpak_privacy=(

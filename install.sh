@@ -177,7 +177,7 @@ if [[ $docker_post == y ]]; then
 fi
 
 read -rp "Do you wish to enable SDDM? [y/n] " sddm_enable
-if [[ $docker_post == y ]]; then
+if [[ $sddm_post == y ]]; then
     sudo systemctl disable gdm.service
     sudo systemctl enable sddm.service
 
