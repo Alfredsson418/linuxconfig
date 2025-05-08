@@ -5,4 +5,3 @@ Use install.sh to automaticlly set up a swayfx tiling enviroment and different s
 - System monitor software
 - Image Viewer software
 - SDDM themes
-- Fonts
