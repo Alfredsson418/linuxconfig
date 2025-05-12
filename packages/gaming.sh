@@ -1,6 +1,6 @@
 fedora_gaming=(
     "steam"
-    "sunshine"
+    "Sunshine"
 )
 
 
