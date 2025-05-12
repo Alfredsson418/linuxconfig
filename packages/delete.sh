@@ -35,7 +35,7 @@ common_delete=(
     "skanpage"
     "spectacle"
     "plasma-systemmonitor"
-    "*kwallet*"
+    "kwallet"
     "kwalletmanager5"
     "pam-kwallet"
     "signon-kwallet-extension"

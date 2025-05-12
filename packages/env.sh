@@ -21,6 +21,8 @@ fedora_env=(
     "xdg-desktop-portal-gtk"
     "xdg-desktop-portal-wlr"
     "adw-gtk3-theme"
+    "pavucontrol" # PulseAudio volume control
+    "sway-audio-idle-inhibit-git" # Does not lock down PC when audio is playing
 )
 
 flatpak_env=(
