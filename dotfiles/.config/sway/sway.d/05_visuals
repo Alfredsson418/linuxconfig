@@ -20,3 +20,7 @@ client.urgent		      #FF0000 #FF0000 #ffffff #FF0000   #FF0000
 
 ### text
 font "Ubuntu Nerd Font" 10
+
+titlebar_separator disable
+
+workspace_layout default
