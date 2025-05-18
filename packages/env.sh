@@ -5,6 +5,7 @@ common_env=(
     "vlc"
     "tmux"
     "NetworkManager-tui"
+    "htop" # System monitor tool
 )
 
 fedora_env=(

@@ -7,6 +7,7 @@ common_dev=(
     "gnome-keyring" # Used to store password for zed etc
     "curl"
     "seahorse" # Frontend for gnome-keys
+    "gnome-boxes"
 )
 
 fedora_dev=(
