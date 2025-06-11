@@ -1,7 +1,11 @@
 # swaymsg -t get_outputs
 
-# Laptops
+output * {
+    res 1920x1080@60Hz
+    pos 0,1080
+}
 
+# Integrated Laptop Display
 output eDP-1 {
     res 1920x1080@60Hz
     pos 0,0
@@ -23,4 +27,9 @@ output HDMI-A-1 {
 output DP-2 {
     res 1920x1080@144Hz
     pos 0,0
+}
+
+output DP-3 {
+    res 2560x1440@99.946Hz
+    pos 1920,0
 }
