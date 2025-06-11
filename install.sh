@@ -5,8 +5,8 @@ flatpak_remotes=(
     "flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo"
 )
 
-echo "Copying dotfiles to $USER"
-cp -rT ./dotfiles ~
+echo "Creating syslink for dotfiles to $USER/.config"
+./scripts/create_syslink.sh
 
 read -rp "Do you wish to remove standard Flatpak remotes? [y/n] " del_flatpak_remotes
 if [[ $del_flatpak_remotes == y ]]; then
