@@ -6,10 +6,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "assistant": {
+  "agent": {
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4o"
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
     },
     "version": "2"
   },
@@ -24,6 +24,7 @@
     "light": "Github Light High Contrast",
     "dark": "Github Dark High Contrast"
   },
+  "format_on_save": "off",
   "languages": {
     "C": {
       "format_on_save": "on"
