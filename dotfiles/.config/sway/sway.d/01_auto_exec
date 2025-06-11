@@ -7,6 +7,9 @@ exec swaync
 # SwayOSD
 exec swayosd-server
 
+# Enables inhibit_idle when playing audio
+exec sway-audio-idle-inhibit
+
 ### Idle configuration
 exec swayidle -w \
         timeout 300 'swaylock -f -c 000000' \
