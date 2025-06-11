@@ -4,7 +4,7 @@ fedora_copr_repo=(
     "erikreider/packages"
     "erikreider/SwayNotificationCenter"
     "swayfx/swayfx"
-    "lizardbyte/stable"
+    "lizardbyte/beta"
 )
 
 fedora_new_repo=(
