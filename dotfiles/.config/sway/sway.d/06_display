@@ -1,10 +1,5 @@
 # swaymsg -t get_outputs
 
-output * {
-    res 1920x1080@60Hz
-    pos 0,1080
-}
-
 # Integrated Laptop Display
 output eDP-1 {
     res 1920x1080@60Hz
