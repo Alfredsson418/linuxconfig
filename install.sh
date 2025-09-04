@@ -61,21 +61,21 @@ if [[ $dev_tools == y ]]; then
     echo "Installing Zed"
 
     # Check if Zed is already installed
-    if command -v zed 2>/dev/null; then
-        echo "✅ Zed is already installed at: $(command -v zed)"
-    else
-        echo "⬇️ Zed is not installed. Installing..."
+    # if command -v zed 2>/dev/null; then
+    #     echo "✅ Zed is already installed at: $(command -v zed)"
+    # else
+    #     echo "⬇️ Zed is not installed. Installing..."
 
         # Download and run the official install script safely
-        curl -fsSL https://zed.dev/install.sh -o /tmp/install_zed.sh
+    #     curl -fsSL https://zed.dev/install.sh -o /tmp/install_zed.sh
 
-        if [ -s /tmp/install_zed.sh ]; then
-            chmod +x /tmp/install_zed.sh
-            /bin/bash /tmp/install_zed.sh
-        else
-            echo "❌ Failed to download the installer."
-        fi
-    fi
+    #     if [ -s /tmp/install_zed.sh ]; then
+    #         chmod +x /tmp/install_zed.sh
+    #         /bin/bash /tmp/install_zed.sh
+    #     else
+    #         echo "❌ Failed to download the installer."
+    #     fi
+    # fi
 
     echo " "
 

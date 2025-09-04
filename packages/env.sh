@@ -2,12 +2,12 @@ common_env=(
     "kitty" # Terminal
     "nautilus" # GUI File Manager
     "sddm"
-    "vlc"
     "tmux"
     "NetworkManager-tui"
     "htop" # System monitor tool
     "cifs-utils"
     "ufw"
+    "qimgv" # Image Viewing software
 )
 
 fedora_env=(
@@ -34,4 +34,5 @@ flatpak_env=(
     "flathub com.github.tchx84.Flatseal" # Change flatpak permissions etc
     "flathub com.spotify.Client"
     "flathub org.mozilla.firefox"
+    "flathub org.videolan.VLC"
 )

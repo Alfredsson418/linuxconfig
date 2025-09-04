@@ -169,7 +169,7 @@ label:focus {
 }
 
 #custom-mullvad.connected {
-    background-color: limegreen;
+    background-color: #26a65b;
 }
 
 #custom-mullvad.disconnected {

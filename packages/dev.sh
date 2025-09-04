@@ -8,6 +8,8 @@ common_dev=(
     "curl"
     "seahorse" # Frontend for gnome-keys
     "gnome-boxes"
+    "neovim" 
+    "python3-neovim"
 )
 
 fedora_dev=(

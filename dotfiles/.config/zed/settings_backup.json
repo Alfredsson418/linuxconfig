@@ -10,7 +10,8 @@
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-3-5-sonnet-latest"
-    }
+    },
+    "version": "2"
   },
   "features": {
     "edit_prediction_provider": "none"
@@ -46,7 +47,7 @@
     }
   },
   "vim_mode": false,
-  "auto_update_extensions": {
+  "auto_install_extension": {
     "github-theme": true,
     "dockerfile" : true,
     "docker-compose" : true,

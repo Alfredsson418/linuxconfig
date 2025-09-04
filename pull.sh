@@ -27,12 +27,18 @@ config_dirs=(
     "swappy"
     "xdg-desktop-portal"
     "enviroment.d"
+    "nvim"
 )
 
+
+
+
 for i in "${config_dirs[@]}"; do
-    dir=$(readlink -f "$config_dir$i")
-    target="$target_dir/.config"
-    mkdir -p $target
-    echo "Copying from $dir to $target"
-    cp -r "$dir" "$target"
+   dir=$(readlink -f "$config_dir$i")
+   target="$target_dir/.config"
+   mkdir -p $target
+   echo "Copying from $dir to $target"
+   cp -r "$dir" "$target"
 done
+
+./scripts/create_syslink.sh
