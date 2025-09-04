@@ -6,8 +6,8 @@ common_env=(
     "NetworkManager-tui"
     "htop" # System monitor tool
     "cifs-utils"
-    "ufw"
     "qimgv" # Image Viewing software
+    # "ufw" # Maybe not install because dependent on iptables
 )
 
 fedora_env=(
