@@ -1,4 +1,6 @@
--- Load core settings
-require("options")
-require("keymaps")
+-- init.lua
+require("core.options")
+require("core.keymaps")
+
 require("plugins")
+
