@@ -10,6 +10,9 @@ common_dev=(
     "gnome-boxes"
     "neovim" 
     "python3-neovim"
+    "lua"
+    "luarocks"
+    "gcc"
 )
 
 fedora_dev=(

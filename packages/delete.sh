@@ -40,4 +40,5 @@ common_delete=(
     "pam-kwallet"
     "signon-kwallet-extension"
     "ksshaskpass"
+    "vlc"
 )
