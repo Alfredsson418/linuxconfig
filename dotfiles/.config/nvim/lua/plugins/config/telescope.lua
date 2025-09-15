@@ -10,6 +10,9 @@ return {
         layout_config = { horizontal = { preview_width = 0.55 } },
         file_ignore_patterns = { },
       },
+	pickers = { 
+		find_files = { hidden = true }
+		},
     })
   end,
 }
