@@ -9,4 +9,5 @@ flatpak_gaming=(
     "flathub org.prismlauncher.PrismLauncher" # Minecraft Launcher
     "flathub com.heroicgameslauncher.hgl"
     "flathub com.moonlight_stream.Moonlight"
+	"flathub com.github.Matoking.protontricks"
 )
