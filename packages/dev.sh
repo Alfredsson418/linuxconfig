@@ -13,6 +13,8 @@ common_dev=(
     "lua"
     "luarocks"
     "gcc"
+	"gcc-c++"
+	"libvala-devel"
 )
 
 fedora_dev=(
