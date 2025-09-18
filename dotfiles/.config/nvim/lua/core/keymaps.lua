@@ -62,4 +62,5 @@ keymap("n", "<leader>fs", "<cmd>Telescope lsp_document_symbols<CR>", { desc = "D
 keymap("n", "<leader>fS", "<cmd>Telescope lsp_workspace_symbols<CR>", { desc = "Workspace symbols" })
 
 	-- Tree
-keymap("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
+keymap("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
+keymap("n", "<leader>e", "<cmd>NvimTreeFocus<CR>", { desc = "Focus file explorer"})
