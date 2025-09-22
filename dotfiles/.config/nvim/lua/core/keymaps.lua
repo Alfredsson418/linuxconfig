@@ -49,7 +49,7 @@ keymap("n", "<leader>fo", "<cmd>Telescope oldfiles<CR>", { desc = "Recent files"
 keymap("n", "<leader>fw", "<cmd>Telescope grep_string<CR>", { desc = "Find word under cursor" })
 
 keymap("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "Find buffers" })
-keymap("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { desc = "Help tags" })
+keymap("n", "<leader>fh", "<cmd>Telescope help_tags<CR>",  { desc = "Help tags" })
 
 keymap("n", "<leader>gc", "<cmd>Telescope git_commits<CR>", { desc = "Git commits" })
 keymap("n", "<leader>gs", "<cmd>Telescope git_status<CR>", { desc = "Git status" })
@@ -64,3 +64,16 @@ keymap("n", "<leader>fS", "<cmd>Telescope lsp_workspace_symbols<CR>", { desc = "
 	-- Tree
 keymap("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
 keymap("n", "<leader>e", "<cmd>NvimTreeFocus<CR>", { desc = "Focus file explorer"})
+
+
+-- Documentation and error messages
+	-- Show current function docs
+keymap("n", "<leader><Tab>", vim.lsp.buf.hover, { desc = "Show docs", })
+
+	-- Display error on current line
+keymap("n", "<leader>§", function()
+  vim.diagnostic.open_float(nil, { focus = false })
+end, { desc = "Show diagnostics for line" })
+
+	-- Display all errors in current file
+keymap("n", "<leader>§§", vim.diagnostic.setloclist, { desc = "Show diagnostics list" })
