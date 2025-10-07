@@ -10,12 +10,13 @@
     "modules-left": [
         "sway/workspaces",
         "sway/mode",
-        "sway/scratchpad"
-
+        "sway/scratchpad",
+		"custom/spotify"
 //         "custom/media"
     ],
     "modules-center": [
       "privacy"
+	//	"custom/spotify"
     ],
     "modules-right": [
         "network",
@@ -175,5 +176,13 @@
         "format": "Mullvad",
         "return-type": "json",
         "interval": 1
-      }
+    },
+	"custom/spotify": {
+    	"exec": "/usr/bin/python3 ~/.config/waybar/modules/mediaplayer.py --player spotify",
+    	"format": "{}",
+    	"return-type": "json",
+    	"on-click": "playerctl play-pause",
+    	// "on-scroll-up": "playerctl next",
+    	// "on-scroll-down": "playerctl previous"
+	}
 }
