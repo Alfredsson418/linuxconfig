@@ -8,6 +8,7 @@ common_env=(
     "cifs-utils"
     "qimgv" # Image Viewing software
     # "ufw" # Maybe not install because dependent on iptables
+	"converseen" # Image converter program
 )
 
 fedora_env=(

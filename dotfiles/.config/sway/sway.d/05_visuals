@@ -2,6 +2,11 @@
 ### Background
 output * bg ~/.config/sway/assets/bg.jpg fill
 
+blur disable
+blur_xray disable
+shadows disable
+
+
 ### Windows
 corner_radius 8
 
@@ -12,7 +17,7 @@ gaps inner 8
 ### Colors
 # class                   border  bground text    indicator child_border
 
-# Black/Gray Theme (Eriks themes)
+# Blue/Black/Gray Theme
 client.focused		      #053c6d #303030 #ffffff #053c6d	#053c6d
 client.focused_inactive	  #4b4b4b #202020 #888888 #4b4b4b	#4b4b4b
 client.unfocused	      #4b4b4b #202020 #888888 #4b4b4b   #4b4b4b
@@ -24,3 +29,4 @@ font "Ubuntu Nerd Font" 10
 titlebar_separator disable
 
 workspace_layout default
+
