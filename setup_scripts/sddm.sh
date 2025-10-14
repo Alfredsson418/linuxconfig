@@ -48,12 +48,15 @@ sudo sed -i "s/^LoginButtonBackgroundColor=.*$/LoginButtonBackgroundColor=\"${ne
 sudo sed -i "s/^DateTextColor=.*$/DateTextColor=\"${new_color}\"/" \
     "${theme_path}/Themes/astronaut.conf"
 
-sudo sed -i "s/^SystemButtonIconsColor=.*$/SystemButtonIconsColor=\"${new_color}\"/" \
+sudo sed -i "s/^SystemButtonsIconsColor=.*$/SystemButtonsIconsColor=\"${new_color}\"/" \
     "${theme_path}/Themes/astronaut.conf"
 
 sudo sed -i "s/^SessionButtonTextColor=.*$/SessionButtonTextColor=\"${new_color}\"/" \
 	"${theme_path}/Themes/astronaut.conf"
 
 sudo sed -i "s/^VirtualKeyboardButtonTextColor=.*$/VirtualKeyboardButtonTextColor=\"${new_color}\"/" \
+    "${theme_path}/Themes/astronaut.conf"
+
+sudo sed -i "s/^WarningColor=.*$/WarningColor=\"${new_color}\"/" \
     "${theme_path}/Themes/astronaut.conf"
 
