@@ -1,8 +1,14 @@
 return {
-  "edeneast/nightfox.nvim",
-  lazy = false,  -- load immediately
-  priority = 1000, -- load before other plugins
-  config = function()
-    vim.cmd.colorscheme("carbonfox")
-  end,
+	"edeneast/nightfox.nvim",
+	lazy = false,
+	priority = 1000,
+	config = function()
+		require("nightfox").setup({
+			options = {
+				transparent = true,
+				terminal_colors = true,
+			}
+		})
+		vim.cmd("colorscheme carbonfox")
+	end,
 }
