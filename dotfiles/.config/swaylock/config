@@ -2,9 +2,33 @@ image=~/.config/sway/assets/bg.jpg
 
 show-keyboard-layout
 
-font Ubuntu Nerd Font
+font="Ubuntu Nerd Font"
 
-indicator-idle-visible
+separator-color=00000000
 
-inside-color 00000000
-inside-clear-color FFFFFF
+inside-color=00000000
+inside-clear-color=00000000
+inside-caps-lock-color=00000000
+inside-ver-color=00000000
+inside-wrong-color=00000000
+
+ring-color=053c6d66
+ring-clear-color=053c6d66
+ring-caps-lock-color=053c6d66
+ring-ver-color=053c6d66
+ring-wrong-color=053c6d66
+
+line-color=00000000
+line-clear-color=00000000
+line-caps-lock-color=00000000
+line-ver-color=00000000
+line-wrong-color=00000000
+
+text-clear-color=000000ff
+text-ver-color=000000ff
+text-wrong-color=bf1d00ff
+
+key-hl-color=053c6dff
+bs-hl-color=bf1d00ff
+caps-lock-key-hl-color=053c6dff
+caps-lock-bs-hl-color=bf1d00ff
