@@ -12,9 +12,9 @@ theme_path="/usr/share/sddm/themes/sddm-astronaut-theme"
 new_color="#bf1d00"
 
 # Replace
-sudo sed -i "s/^Current=.*$/Current=sddm-astronaut-theme/" \
-    /etc/sddm.conf
-# sudo sed -i "s/$(grep 'Current=' /etc/sddm.conf)/Current=sddm-astronaut-theme/g" /etc/sddm.conf
+# sudo sed -i "s/^Current=.*$/Current=sddm-astronaut-theme/" \
+#     /etc/sddm.conf
+sudo sed -i "s/$(grep 'Current=' /etc/sddm.conf)/Current=sddm-astronaut-theme/g" /etc/sddm.conf
 
 # Add
 echo "[General]
