@@ -13,7 +13,7 @@ gaps inner 8
 # class                   border  bground text    indicator child_border
 
 # Black/Gray Theme (Eriks themes)
-client.focused		      #FF0000 #303030 #ffffff #FF0000	#FF0000
+client.focused		      #23bcd2 #303030 #ffffff #23bcd2	#23bcd2
 client.focused_inactive	  #4b4b4b #202020 #888888 #4b4b4b	#4b4b4b
 client.unfocused	      #4b4b4b #202020 #888888 #4b4b4b   #4b4b4b
 client.urgent		      #FF0000 #FF0000 #ffffff #FF0000   #FF0000
