@@ -2,6 +2,7 @@
 
 export PS1='\[\e[0;34m\]\u | \[\e[4;34m\]\w\[\e[0m\] \$ '
 
+export EDITOR="nvim"
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then

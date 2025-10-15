@@ -1,4 +1,4 @@
-@define-color background rgba(32, 32, 32, 0.3);
+@define-color background rgba(218, 218, 218, 1);
 @define-color module rgb(32, 32, 32);
 @define-color button rgba(32, 32, 32, 0.5);
 @define-color button-focus rgba(5, 60, 109, 0.6);
@@ -20,21 +20,21 @@ window#waybar {
 .modules-left {
 	padding: 4px;
 	margin: 5 0 0 10;
-	border-radius: 8px;
+	border-radius: 12px;
 	background-color: @background;
 }
 
 .modules-center {
-	padding: 6px;
+	padding: 4px;
 	margin: 5 0 0 0;
-	border-radius: 16px;
-	background-color: transparent;
+	border-radius: 12px;
+	background-color: @background;
 }
 
 .modules-right {
 	padding: 4px;
 	margin: 5 10 0 0;
-	border-radius: 8px;
+	border-radius: 12px;
 	background-color: @background;
 }
 
@@ -106,6 +106,7 @@ button {
 #custom-media,
 #mode,
 #idle_inhibitor,
+#privacy,
 #scratchpad {
 	padding: 0 10px;
 	background-color: @module;
@@ -123,16 +124,8 @@ button {
 	border-width: 0.5px;
 	border-style: solid;
 	border-radius: 12px;
+	background-color: @module;
 
-}
-
-#privacy {
-	padding-right: 10px;
-	padding-left: 10px;
-	padding-bottom: 2px;
-	padding-top: 2px;
-	border-radius: 10px;
-	background-color: @background;
 }
 
 /* If workspaces is the leftmost module, omit left margin */

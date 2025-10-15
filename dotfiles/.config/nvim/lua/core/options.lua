@@ -9,3 +9,9 @@ vim.opt.number = true
 
 -- Yanks everyting to clipboard
 vim.cmd("set clipboard=unnamedplus")
+
+vim.filetype.add({
+    extension = {
+        html = "html",
+    },
+})

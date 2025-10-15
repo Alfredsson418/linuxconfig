@@ -8,4 +8,7 @@ Use install.sh to automaticlly set up a swayfx tiling enviroment and different s
 
 ## Colors
 #053C6D Blue
+
 #bf1d00 Red/Orange
+
+#dadada White

@@ -20,6 +20,7 @@ return {
 		"mesonlsp",
 		"gh-actions-language-server",
 		"yaml-language-server",
+		"efm",
 
 		-- Linters/Formatters
 		-- Linters
@@ -30,6 +31,7 @@ return {
 		"luaformatter",
 		"clang-format",
 		"latexindent",
+		"prettierd", -- npm install -D prettier prettier-plugin-jinja-template
 	},
 	auto_update = false,
 }
