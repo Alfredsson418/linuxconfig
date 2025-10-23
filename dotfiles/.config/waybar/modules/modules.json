@@ -1,0 +1,157 @@
+{
+	"privacy": {
+		"icon-spacing": 6,
+		"icon-size": 16,
+		"transition-duration": 250,
+		"modules": [
+			{
+				"type": "screenshare",
+				"tooltip": true,
+				"tooltip-icon-size": 24
+			},
+			{
+				"type": "audio-out",
+				"tooltip": true,
+				"tooltip-icon-size": 24
+			},
+			{
+				"type": "audio-in",
+				"tooltip": true,
+				"tooltip-icon-size": 24
+			}
+		]
+	},
+	"tray": {
+		"show-passive-items": true,
+		"reverse-direction": true,
+		"icon-size": 20,
+		"spacing": 10
+	},
+	"sway/workspaces": {
+		"disable-scroll": true,
+		"all-outputs": true,
+		"warp-on-scroll": false,
+		"format": "{name}"
+	},
+	"sway/mode": {
+		"format": "<span style=\"italic\">{}</span>"
+	},
+	"sway/scratchpad": {
+		"format": "{icon} {count}",
+		"show-empty": false,
+		"format-icons": [
+			"",
+			""
+		],
+		"tooltip": true,
+		"tooltip-format": "{app}: {title}"
+	},
+	"clock": {
+		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+		"format": "{:%H:%M}",
+		"format-alt": "{:%Y-%m-%d}"
+	},
+	"cpu": {
+		"format": "{usage}% ",
+		"tooltip": false
+	},
+	"memory": {
+		"format": "{}% "
+	},
+	"temperature": {
+		"critical-threshold": 70,
+		"format": "{temperatureC}°C {icon}",
+		"format-icons": [
+			""
+		]
+	},
+	"backlight": {
+		"format": "{percent}% {icon}",
+		"format-icons": [
+			""
+		]
+	},
+	"battery": {
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{capacity}% {icon}",
+		"format-full": "{capacity}% {icon}",
+		"format-charging": "{capacity}% 🗲",
+		"format-plugged": "{capacity}% ",
+		"format-alt": "{time} {icon}",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		]
+	},
+	"network": {
+		"format-wifi": "{essid} ({signalStrength}%) ",
+		"format-ethernet": "{ipaddr}/{cidr} 󰈁",
+		"tooltip-format": "{ifname} via {gwaddr} 󰛵",
+		"format-linked": "{ifname} (No IP)",
+		"format-disconnected": "Offline 󰈂",
+		"format-alt": "{ifname}: {ipaddr}/{cidr}"
+	},
+	"custom/media": {
+		"format": "{icon} {text}",
+		"return-type": "json",
+		"max-length": 40,
+		"format-icons": {
+			"spotify": "",
+			"default": "🎜"
+		},
+		"escape": true,
+		"exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
+	},
+	"custom/power": {
+		"format": "⏻",
+		"tooltip": false,
+		"menu": "on-click",
+		"menu-file": "$HOME/.config/waybar/modules/power_menu.xml",
+		"menu-actions": {
+			"shutdown": "shutdown now",
+			"reboot": "reboot",
+			"suspend": "systemctl suspend"
+		}
+	},
+	"custom/notification": {
+		"tooltip": false,
+		"format": "{} {icon}",
+		"format-icons": {
+			"notification": "<span foreground='red'><sup></sup></span>",
+			"none": "",
+			"dnd-notification": "<span foreground='red'><sup></sup></span>",
+			"dnd-none": "",
+			"inhibited-notification": "<span foreground='red'><sup></sup></span>",
+			"inhibited-none": "",
+			"dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+			"dnd-inhibited-none": ""
+		},
+		"return-type": "json",
+		"exec-if": "which swaync-client",
+		"exec": "swaync-client -swb",
+		"on-click": "swaync-client -t -sw",
+		"on-click-right": "swaync-client -d -sw",
+		"escape": true
+	},
+	"custom/mullvad": {
+		"exec": "~/.config/waybar/scripts/mullvad.sh",
+		"on-click": "~/.config/waybar/scripts/toggle-mullvad.sh",
+		"format": "Mullvad",
+		"return-type": "json",
+		"interval": 1
+	},
+	"custom/spotify": {
+		"exec": "/usr/bin/python3 ~/.config/waybar/modules/mediaplayer.py --player spotify",
+		"format": "{}",
+		"return-type": "json",
+		"on-click": "playerctl play-pause",
+		"on-scroll-up": "playerctl volume 0.1+",
+		"on-scroll-down": "playerctl volume 0.1-"
+	}
+}
