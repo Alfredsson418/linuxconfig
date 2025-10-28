@@ -159,7 +159,7 @@ set $fp_run flatpak run
 
 bindsym $mod+Ctrl+z exec zed
 
-set $fp_discord com.discordapp.DiscordCanary
+set $fp_discord com.discordapp.Discord
 bindsym $mod+Ctrl+d exec $fp_run $fp_discord
 
 # Toggle control center
