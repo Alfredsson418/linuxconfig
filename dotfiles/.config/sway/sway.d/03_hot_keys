@@ -132,8 +132,8 @@ bindsym $mod+r mode "resize"
     # Source volume toggle mute
     bindsym XF86AudioMicMute exec swayosd-client --input-volume mute-toggle
     # Special keys to adjust brightness via brightnessctl
-    # bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
-    # bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+    bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
+    bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
     # Screenshot
     bindsym $mod+print exec grimshot save area - | swappy -f -

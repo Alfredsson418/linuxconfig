@@ -195,7 +195,7 @@
 		"format": "{}",
 		"return-type": "json",
 		"on-click": "playerctl play-pause",
-		// "on-scroll-up": "playerctl next",
-		// "on-scroll-down": "playerctl previous"
+		"on-scroll-right": "playerctl next",
+		"on-scroll-left": "playerctl previous"
 	}
 }
