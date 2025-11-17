@@ -1,9 +1,9 @@
 [
-		{
+	{
 		// Primary Laptop Display
 		"layer": "top",
 		"output": [
-			"eDP-1",
+			"eDP-1"
 		],
 		"spacing": 4,
 		"include": [
@@ -16,7 +16,9 @@
 			"custom/spotify"
 		],
 		"modules-center": [
-			"privacy"
+			"privacy#screen",
+			"privacy#ain",
+			"privacy#aout"
 		],
 		"modules-right": [
 			"network",
@@ -32,7 +34,6 @@
 			"custom/power"
 		]
 	},
-
 	{
 		// Primary Desktop Display
 		"layer": "top",
@@ -51,7 +52,9 @@
 			"custom/spotify"
 		],
 		"modules-center": [
-			"privacy"
+			"privacy#screen",
+			"privacy#ain",
+			"privacy#aout"
 		],
 		"modules-right": [
 			"network",
@@ -85,7 +88,9 @@
 			"custom/spotify"
 		],
 		"modules-center": [
-			"privacy"
+			"privacy#screen",
+			"privacy#ain",
+			"privacy#aout"
 		],
 		"modules-right": [
 			"network",
@@ -99,27 +104,5 @@
 			"custom/notification",
 			"clock"
 		]
-	},
-	{
-		// Other Display
-		"layer": "top",
-		"output": [
-			"!HDMI-A-1",
-			"!eDP-1",
-			"!DP-2"
-		],
-		"spacing": 4,
-		"include": [
-			"~/.config/waybar/modules/modules.json",
-		],
-		"modules-left": [
-			"sway/workspaces",
-			"sway/mode",
-			"sway/scratchpad"
-		],
-		"modules-center": [],
-		"modules-right": [
-			"clock"
-		],
 	}
 ]

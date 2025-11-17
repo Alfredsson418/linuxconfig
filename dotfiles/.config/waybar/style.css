@@ -28,7 +28,7 @@ window#waybar {
 	padding: 4px;
 	margin: 5 0 0 0;
 	border-radius: 12px;
-	background-color: @background;
+	background-color: transparent;
 }
 
 .modules-right {
@@ -106,7 +106,6 @@ button {
 #custom-media,
 #mode,
 #idle_inhibitor,
-#privacy,
 #scratchpad {
 	padding: 0 10px;
 	background-color: @module;
@@ -125,16 +124,29 @@ button {
 	border-style: solid;
 	border-radius: 12px;
 	background-color: @module;
+}
 
+#privacy.screen {
+	background-color: green;
+}
+
+#privacy.aout{
+	background-color: orange;
+	padding: 0 10px;
+}
+
+#privacy.ain {
+	background-color: red;
+	padding: 0 10px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left>widget:first-child>#workspaces {
+.modules-left > widget:first-child > #workspaces {
 	margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right>widget:last-child>#workspaces {
+.modules-right > widget:last-child > #workspaces {
 	margin-right: 0;
 }
 

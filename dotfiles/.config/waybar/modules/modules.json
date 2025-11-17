@@ -21,6 +21,42 @@
 			}
 		]
 	},
+	"privacy#screen": {
+		"icon-spacing": 6,
+		"icon-size": 16,
+		"transition-duration": 250,
+		"modules": [
+			{
+				"type": "screenshare",
+				"tooltip": true,
+				"tooltip-icon-size": 24
+			}
+		]
+	},
+	"privacy#aout": {
+		"icon-spacing": 6,
+		"icon-size": 16,
+		"transition-duration": 250,
+		"modules": [
+			{
+				"type": "audio-out",
+				"tooltip": true,
+				"tooltip-icon-size": 24
+			}
+		]
+	},
+	"privacy#ain": {
+		"icon-spacing": 6,
+		"icon-size": 16,
+		"transition-duration": 250,
+		"modules": [
+			{
+				"type": "audio-in",
+				"tooltip": true,
+				"tooltip-icon-size": 24
+			}
+		]
+	},
 	"tray": {
 		"show-passive-items": true,
 		"reverse-direction": true,

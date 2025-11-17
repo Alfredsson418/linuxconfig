@@ -29,6 +29,7 @@ fedora_env=(
     "pavucontrol" # PulseAudio volume control
     "sway-audio-idle-inhibit-git" # Does not lock down PC when audio is playing
     "nfs-utils"
+	"brightnessctl"
 )
 
 flatpak_env=(

@@ -23,4 +23,5 @@ fedora_dev=(
 
 flatpak_dev=(
     "flathub com.jetbrains.IntelliJ-IDEA-Community"
+	"flathub md.obsidian.Obsidian" # Notes program 
 )
