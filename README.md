@@ -12,3 +12,7 @@ Use install.sh to automaticlly set up a swayfx tiling enviroment and different s
 #bf1d00 Red/Orange
 
 #dadada White
+
+## Todo
+- Add correct temp sensors for laptop and desktop
+- Check network 

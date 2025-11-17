@@ -35,6 +35,12 @@ keymap("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
 keymap("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
 keymap("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close split" })
 
+-- Window navigation with Ctrl + a/s/w/d
+keymap("n", "<C-a>", "<C-w>h", { noremap = true, silent = true })
+keymap("n", "<C-s>", "<C-w>j", { noremap = true, silent = true })
+keymap("n", "<C-w>", "<C-w>k", { noremap = true, silent = true }) -- overrides default
+keymap("n", "<C-d>", "<C-w>l", { noremap = true, silent = true })
+
 -- #### Tab management ####
 keymap("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" })
 keymap("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close tab" })

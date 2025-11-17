@@ -11,6 +11,7 @@ shadows disable
 corner_radius 8
 
 title_align center
+default_border pixel 1
 
 gaps inner 8
 
