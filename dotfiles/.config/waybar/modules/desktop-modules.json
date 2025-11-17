@@ -1,0 +1,10 @@
+{
+	"temperature#CPU": {
+		"critical-threshold": 70,
+		"format": "{temperatureC}°C {icon}",
+		"hwmon-path": "/sys/class/hwmon/hwmon5/temp2_input",
+		"format-icons": [
+			""
+		]
+	},
+}

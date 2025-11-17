@@ -9,6 +9,7 @@ common_env=(
     "qimgv" # Image Viewing software
     # "ufw" # Maybe not install because dependent on iptables
 	"converseen" # Image converter program
+	"wireguard-tools"
 )
 
 fedora_env=(

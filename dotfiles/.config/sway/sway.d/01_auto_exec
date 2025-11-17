@@ -8,7 +8,8 @@ exec swaync
 exec swayosd-server
 
 # Enables inhibit_idle when playing audio
-exec sway-audio-idle-inhibit
+# exec sway-audio-idle-inhibit
+exec_always sway-audio-idle-inhibit
 
 ### Idle configuration
 exec swayidle -w \

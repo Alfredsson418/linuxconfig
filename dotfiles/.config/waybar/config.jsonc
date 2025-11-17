@@ -42,6 +42,7 @@
 		"spacing": 4,
 		"include": [
 			"~/.config/waybar/modules/modules.json",
+			"~/.config/waybar/modules/desktop-modules.json"
 		],
 		"modules-left": [
 			"sway/workspaces",
@@ -56,7 +57,7 @@
 			"network",
 			"cpu",
 			"memory",
-			"temperature",
+			"temperature#CPU",
 			"backlight",
 			"custom/mullvad",
 			"battery",
@@ -75,6 +76,7 @@
 		"spacing": 4,
 		"include": [
 			"~/.config/waybar/modules/modules.json",
+			"~/.config/waybar/modules/desktop-modules.json"
 		],
 		"modules-left": [
 			"sway/workspaces",
@@ -89,7 +91,7 @@
 			"network",
 			"cpu",
 			"memory",
-			"temperature",
+			"temperature#CPU",
 			"backlight",
 			"custom/mullvad",
 			"battery",

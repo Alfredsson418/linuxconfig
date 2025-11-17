@@ -58,13 +58,6 @@
 	"memory": {
 		"format": "{}% "
 	},
-	"temperature": {
-		"critical-threshold": 70,
-		"format": "{temperatureC}°C {icon}",
-		"format-icons": [
-			""
-		]
-	},
 	"backlight": {
 		"format": "{percent}% {icon}",
 		"format-icons": [
@@ -153,5 +146,17 @@
 		"on-click": "playerctl play-pause",
 		"on-scroll-up": "playerctl volume 0.1+",
 		"on-scroll-down": "playerctl volume 0.1-"
-	}
+	},
+	"custom/audio_idle_inhibitor": {
+		"format": "{icon}",
+		"exec": "sway-audio-idle-inhibit --dry-print-both-waybar",
+		"exec-if": "which sway-audio-idle-inhibit",
+		"return-type": "json",
+		"format-icons": {
+			"output": "",
+			"input": "",
+			"output-input": "  ",
+			"none": ""
+		}
+	},
 }
