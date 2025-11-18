@@ -18,7 +18,7 @@ common_dev=(
 )
 
 fedora_dev=(
-
+	"lazygit"
 )
 
 flatpak_dev=(

@@ -28,6 +28,7 @@ config_dirs=(
     "xdg-desktop-portal"
     "enviroment.d"
     "nvim"
+	"lazygit"
 )
 
 

@@ -5,6 +5,7 @@ fedora_copr_repo=(
     "erikreider/SwayNotificationCenter"
     "swayfx/swayfx"
     "lizardbyte/beta"
+	"dejan/lazygit"
 )
 
 fedora_new_repo=(

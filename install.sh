@@ -58,7 +58,7 @@ if [[ $dev_tools == y ]]; then
 
     source ./packages/dev.sh
 
-    echo "Installing Zed"
+    # echo "Installing Zed"
 
     # Check if Zed is already installed
     # if command -v zed 2>/dev/null; then
