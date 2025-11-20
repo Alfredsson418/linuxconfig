@@ -1,18 +1,18 @@
 # autotiling
-exec autotiling
+exec_always systemctl --user start autotiling
 
 # Notification Daemon
-exec swaync
+exec_always systemctl --user start swaync
 
 # SwayOSD
-exec swayosd-server
+exec_always systemctl --user start swayosd-server
 
 # Enables inhibit_idle when playing audio
 # exec sway-audio-idle-inhibit
-exec_always sway-audio-idle-inhibit
+exec_always systemctl --user start sway-audio-idle-inhibit
 
 ### Idle configuration
-exec swayidle -w \
+exec_always swayidle -w \
         timeout 300 'swaylock -f -c 000000' \
         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
         before-sleep 'swaylock -f -c 000000'

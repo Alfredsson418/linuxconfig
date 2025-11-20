@@ -4,3 +4,6 @@ input * xkb_layout se
 
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+
+
+for_window [shell=".*"] inhibit_idle fullscreen
