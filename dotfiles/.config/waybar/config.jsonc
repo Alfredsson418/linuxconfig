@@ -8,6 +8,7 @@
 		"spacing": 4,
 		"include": [
 			"~/.config/waybar/modules/modules.json",
+			"~/.config/waybar/modules/laptop-modules.json"
 		],
 		"modules-left": [
 			"sway/workspaces",
@@ -24,7 +25,7 @@
 			"network",
 			"cpu",
 			"memory",
-			"temperature",
+			"temperature#iCPU",
 			"backlight",
 			"custom/mullvad",
 			"battery",
