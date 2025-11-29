@@ -1,11 +1,11 @@
 # autotiling
-exec_always systemctl --user start autotiling
+exec_always autotiling
 
 # Notification Daemon
 exec_always systemctl --user start swaync
 
 # SwayOSD
-exec_always systemctl --user start swayosd-server
+exec_always swayosd-server
 
 # Enables inhibit_idle when playing audio
 # exec sway-audio-idle-inhibit
