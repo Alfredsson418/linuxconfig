@@ -119,12 +119,12 @@
 		]
 	},
 	"network": {
-		"format-wifi": "{essid} ({signalStrength}%) ",
-		"format-ethernet": "{ifname} 󰈁",
-		"tooltip-format": "{ifname} via {gwaddr} 󰛵",
-		"format-linked": "{ifname} (No IP)",
-		"format-disconnected": "Offline 󰈂",
-		"format-alt": "{ifname}: {ipaddr}/{cidr}"
+		"format": "{ifname}",
+		"tooltip-format": " {bandwidthUpBits} |  {bandwidthDownBits} | 󰞱 {bandwidthTotalBits}",
+		"format-wifi": "{essid} | {signalStrength}% 󰘊",
+		"format-ethernet": "{ifname} ",
+		"format-disconnected": "Offline",
+		"format-alt": "IP: {ipaddr}/{cidr}"
 	},
 	"custom/media": {
 		"format": "{icon} {text}",
