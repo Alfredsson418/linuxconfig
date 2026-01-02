@@ -38,4 +38,5 @@ flatpak_env=(
     "flathub com.spotify.Client"
     "flathub org.mozilla.firefox"
     "flathub org.videolan.VLC"
+	"flathub io.missioncenter.MissionCenter"
 )

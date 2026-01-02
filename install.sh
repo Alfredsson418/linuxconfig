@@ -137,6 +137,8 @@ if [[ $gaming_apps == y ]]; then
     done
 fi
 
+echo " "
+
 read -rp "Do you wish to install Privacy applications and tools? [y/n] " privacy_apps
 if [[ $privacy_apps == y ]]; then
 
@@ -147,6 +149,23 @@ if [[ $privacy_apps == y ]]; then
 
     echo "Installing via flatpak ${flatpak_privacy[@]}"
     for i in "${flatpak_privacy[@]}"; do
+        echo "flatpak remote-add --if-not-exists $i"
+        flatpak install -y $i
+    done
+fi
+
+echo " "
+
+read -rp "Do you wish to install Music Production applications and tools? [y/n] " music_prod_apps
+if [[ $music_prod_apps == y ]]; then
+
+    source ./packages/musicprod.sh
+
+    echo "Installing via dnf: ${fedora_music_prod[@]}"
+    sudo dnf install -y "${fedora_music_prod[@]}"
+
+    echo "Installing via flatpak ${flatpak_music_prod[@]}"
+    for i in "${flatpak_music_prod[@]}"; do
         echo "flatpak remote-add --if-not-exists $i"
         flatpak install -y $i
     done
@@ -180,8 +199,8 @@ if [[ $font_install == y ]]; then
 
 fi
 
-read -rp "Do you wish to install Nvidia drivers? (This will update the system)[y/n] " nvidia_drivers
+# read -rp "Do you wish to install Nvidia drivers? (This will update the system)[y/n] " nvidia_drivers
 # https://rpmfusion.org/Howto/NVIDIA#Current_GeForce.2FQuadro.2FTesla
-if [[ $nvidia_drivers == y ]]; then
-    bash ./scripts/nvidia_driver_install.sh
-fi
+# if [[ $nvidia_drivers == y ]]; then
+#     bash ./scripts/nvidia_driver_install.sh
+# fi
