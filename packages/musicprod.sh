@@ -7,6 +7,8 @@ fedora_music_prod=(
 	# "qjackctl" # GUI for edit JACK
 	# "pulseaudio-module-jack" # Module for jack and pulseaudio to work together
 	# "ardour8"
+	"samplv1"
+	"lv2-samplv1"
 )
 
 
